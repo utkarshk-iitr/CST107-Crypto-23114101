@@ -1,7 +1,7 @@
 So for any arbitary n , we have n variables with us and we can insert n-1 operators in between them.
 
 For operators we have two options : AND , XOR  ->  2**(n-1) options
-Also for variables we have option to choose between : x and x compliment  ->  2**(n) options
+Also for variables we have option to choose between : 1 and 0 ->  2**(n) options
 
 So total number of permutations = 2**(n)  *  2**(n-1)
 				=  2**(2n-1)
