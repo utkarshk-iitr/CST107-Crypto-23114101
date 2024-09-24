@@ -31,4 +31,5 @@ def func(n):
         print()
         print()
 
-func(4)
+n = int(input("Enter value of n : "))
+func(n)
