@@ -27,7 +27,7 @@ def encrypt2rounds(pt,key):
     ct = pt
 
     for i in range(1,nr+1):
-        ct = xor(key[i-1],pt)
+        ct = xor(key[i-1],ct)
 
     ct = ct[2]+ct[0]+ct[3]+ct[5]+ct[1]+ct[7]+ct[6]+ct[4]
     return ct
@@ -38,7 +38,7 @@ def decrpyt2rounds(ct,key):
     pt = ct
 
     for i in range(1,nr+1):
-        pt = xor(key[i-1],ct)
+        pt = xor(key[i-1],pt)
         
     pt = pt[2]+pt[0]+pt[3]+pt[5]+pt[1]+pt[7]+pt[6]+pt[4]
     return pt
